@@ -32,3 +32,22 @@ Thumbs.db
 # Temporary files
 *.log
 *.tmp
+
+# DermAI model files (upload only the final fine-tuned model)
+models/*.keras
+!models/efficientnet_b0_four_class_finetuned_best.keras
+
+# Generated datasets and metadata
+scin_metadata/
+normal_skin_dermoscopic_image_ids.csv
+normal_skin_failed_downloads.csv
+normal_skin_train.csv
+normal_skin_validation.csv
+train_four_class.csv
+validation_four_class.csv
+
+# Generated misclassification images
+evaluation_results/misclassified_images/
+
+# Unnecessary symbolic link
+py
